@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>My JavaScript Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="A showcase of my JavaScript projects." />
 </head>
 <body>
-  <h1>🚀 My JavaScript Projects</h1>
-  <ul>
-    <li><a href="project-1-hello-world/index.html">Project 1: Hello World Button</a></li>
-    <li><a href="project-2-counter/index.html">Project 2: Counter App</a></li>
-    <li><a href="project-3-todo-list/index.html">Project 3: To-Do List</a></li>
-  </ul>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1>🚀 My JavaScript Projects</h1>
+      <p class="subtitle">Small projects, big learning. Click any card to open the live demo.</p>
+
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Search projects… (e.g. timer, api, todo)" />
+        <div id="tags" class="tags"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="grid" class="grid" aria-live="polite"></section>
+
+    <noscript>
+      <p><strong>Enable JavaScript</strong> to see the project grid.</p>
+      <ul>
+        <li><a href="1 Hello world Button/">Hello World Button</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jawad — Built with HTML, CSS & JavaScript</p>
+      <p><a href="https://github.com/DrMuhammadJawadAli/My-Projects-in-javascript" target="_blank" rel="noopener">View on GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
